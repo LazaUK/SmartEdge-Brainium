@@ -9,3 +9,4 @@
 Machine Learning at the edge to recognise gestures and enable smart manufacturing's QA control
 
 ## Working model
+You can find short demo of working solution here on [YouTube](https://youtu.be/n5GvrZQTSfs)
