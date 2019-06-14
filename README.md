@@ -18,17 +18,21 @@ You should have Azure IoT Hub installed in your Azure subscription to retrieve i
 - user_id
 - device_id
 
+You may also need to install 2 additional libraries for Python:
+- Paho MQTT client+server package
+```
+pip install paho-mqtt
+```
+- Azure IoT Hub client package
+```
+pip install azure-iothub-device-client
+```
 
-x
-x
-x
-x
-x
-x
+
 ## Azure Stream Analytics
 Setup new instance of ASA, add your IoT Hub as an input (in this code called "MyStream") and PowerBI as an output (in this code - "MyBI") to define data flow.
 
-Then copy-paste the following [SQL script](ASA_SmartEdge.sql) into ASA's query section. It would learn from the last 120 patterns of the motions in 2 min windows and provide you with it's scoring and indication of the possible anomalies. Again, as an example here we look at both peaks and drops.
+Then copy-paste the following [SQL script](ASA_SmartEdge.sql) into ASA's query section. It would learn from the last 120 patterns of the motions in 2 min windows and provide you with it's scoring and indication of the possible anomalies. Again, as an example here we look at both peaks and drops. Don't forget to **start** your Stream Analytics job when ready.
 ```
 WITH AnomalyDetectionStep AS
 (
