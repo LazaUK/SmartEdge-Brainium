@@ -1,0 +1,1 @@
+{"id":"XXX","deviceId":"YYY","projectId":882,"modelId":804,"startedAt":1560346463006,"finishedAt":1560346466269,"receivedAt":1560346470420,"code":1,"name":"Tick","selfProbability":60.950111389160156,"acceleration":0.038315534591674805,"speed":0.5087524652481079,"probabilityRank":[{"code":0,"name":"Circle","rank":39.049888610839844},{"code":255,"name":"Undefined","rank":0.0}]}
