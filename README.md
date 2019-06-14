@@ -48,5 +48,5 @@ Another scenario which can be enabled here using **_AnomalyDetection_ChangePoint
 Once you get data in PowerBI, you can create a new report and publish it in a dashboard.
 ![pbi-dashboard](PowerBI_Dashboard.png)
 This results shows the motions detected overtime, and detect anomalies in the peaks and drops.
-## Working model
+## Working model - Demo
 You can find short demo of working solution here on [YouTube](https://youtu.be/n5GvrZQTSfs)
