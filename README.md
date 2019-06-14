@@ -18,6 +18,8 @@ You should have Azure IoT Hub installed in your Azure subscription to retrieve i
 - user_id
 - device_id
 
+> Don't forget to download [SSL certificate](https://brainium.blob.core.windows.net/public/docs/cacert.crt) as advised in Brainium API documentation and save it to the same directory where you would keep provided Python file.
+
 You may also need to install 2 additional libraries for Python:
 > Paho MQTT client+server package
 ```
