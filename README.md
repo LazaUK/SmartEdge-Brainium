@@ -19,7 +19,7 @@ x
 Setup new instance of ASA, add your IoT Hub as an input (in this code called "MyStream") and PowerBI as an output (in this code - "MyBI") to define data flow.
 Then copy-paste the following [SQL script](ASA_SmartEdge.sql) into ASA's query section. It would learn from the last 120 patterns of the motions in 2 min windows and provide you with it's scoring and indication of the possible anomalies. Again, as an example here we look at both peaks and drops.
 For the provided scenario, drops can be characterised as unintended gestures from the quality control staff if the probability guess at the edge is relatively low comparing to the previous examples.
-Another scenario which can be enabled here using "AnomalyDetection_ChangePoint" function, which would detect increase in the number of defects identified and thus trigger an alarm, indicating significant drop in the production output's quality, highlighting potential issue with the monitored equipment.
+Another scenario which can be enabled here using **"_AnomalyDetection_ChangePoint_"** function, which would detect increase in the number of defects identified and thus trigger an alarm, indicating significant drop in the production output's quality, highlighting potential issue with the monitored equipment.
 ## PowerBI Dashboard
 Once you get data in PowerBI, you can create a new report and publish it in a dashboard.
 ![pbi-dashboard](PowerBI_Dashboard.png)
