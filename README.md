@@ -10,6 +10,15 @@ Training motion recognition and sync into Brainium portal is one of the pre-requ
 
 Partes below will describe how to enable MQTT client to retrieve data, upload it into Azure IoT Hub and the use scripting within Azure Stream Analytics to detect anomalies.
 ## MQTT Client
+Provided [Python script](brainium_mqtt_git.py) above allows the use MQTT protocol for the interaction with both Brainium API (to subscribe to the motion events) and also to upload then some of the details into Azure IoT Hub's endpoint for the further processing.
+
+You should have Azure IoT Hub installed in your Azure subscription to retrieve its connection details. In the similar way, you need to check your profile settings in the Brainium portal to get API connection secrets. All these details are required to set the values for the following variables in Python file:
+- CONNECTION_STRING
+- mqtt_password
+- user_id
+- device_id
+
+
 x
 x
 x
