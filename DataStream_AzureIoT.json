@@ -1,0 +1,1 @@
+[{"deviceId":"XXX","probability":95.14,"EventProcessedUtcTime":"2019-06-12T22:31:14.2992182Z","PartitionId":1,"EventEnqueuedUtcTime":"2019-06-12T22:31:10.8620000Z","IoTHub":{"MessageId":null,"CorrelationId":null,"ConnectionDeviceId":"SmartEdge","ConnectionDeviceGenerationId":"0202020202","EnqueuedTime":"2019-06-12T22:31:10.8520000Z","StreamId":null}}]
