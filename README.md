@@ -1,6 +1,6 @@
 # SmartEdge Agile: API data Retrieval and Upload into Azure IoT Hub + Stream Analytics for Anomaly Detection
 ## Pre-requisites:
-- You should have access to SmartEdge Agile device from [AVNet](https://www.avnet.com/wps/portal/us/solutions/iot/building-blocks/smartedge-agile) and Octonion;
+- You should have access to SmartEdge Agile device from [AVNET](https://www.avnet.com/wps/portal/us/solutions/iot/building-blocks/smartedge-agile) and Octonion;
 - You should train the model in [Brainium portal](https://www.brainium.com/) and deploy them to SmartEdge Agile device;
 - You should also have smartphone or Raspberry Pi with Brainium Gateway app installed to enable data streaming from device over to the portal
 ## High-Level Architecture
@@ -63,4 +63,4 @@ Once you get data in PowerBI, you can create a new report and publish it in a da
 ![pbi-dashboard](PowerBI_Dashboard.png)
 This results shows the motions detected overtime, and detect anomalies in the peaks and drops.
 ## Working model - Demo
-You can find short demo of working solution here on [YouTube](https://youtu.be/n5GvrZQTSfs)
+You can find short demo of working solution here on [YouTube](https://youtu.be/Gui9sqyglFw)
