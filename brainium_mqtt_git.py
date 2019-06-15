@@ -12,18 +12,19 @@ from iothub_client import IoTHubMessage, IoTHubMessageDispositionResult, IoTHubE
 # Azure connection parameters
 CONNECTION_STRING = '<<--STUB-->>'  # copy and paste here your Azure IoT Hub connection string
 PROTOCOL = IoTHubTransportProvider.MQTT
+
 azureclient = IoTHubClient(CONNECTION_STRING, PROTOCOL)
 azureclient.set_option("auto_url_encode_decode", True)
 
 # Brainium connection parameters
-mqtt_user_name = 'oauth2-user'
-mqtt_password = '<<--STUB-->>'  # copy and paste here external client id from your account
-user_id = '<<--STUB-->>'  # copy and paste here your user id
-device_id = '<<--STUB-->>'  # copy and paste here your device id
+MQTT_USER_NAME = 'oauth2-user'
+MQTT_PASSWORD = '<<--STUB-->>'  # copy and paste here external client id from your account
+USER_ID = '<<--STUB-->>'  # copy and paste here your user id
+DEVICE_ID = '<<--STUB-->>'  # copy and paste here your device id
 
 motion_datasource_topic = '/v1/users/{user_id}/in/devices/{device_id}/datasources/MOTION'.format(
-    user_id=user_id,
-    device_id=device_id)
+    user_id=USER_ID,
+    device_id=DEVICE_ID)
 
 ca_cert_path = 'cacert.crt'
 
@@ -62,7 +63,7 @@ def main():
     client.on_message = on_message
 
     client.tls_set(ca_certs=ca_cert_path)
-    client.username_pw_set(mqtt_user_name, mqtt_password)
+    client.username_pw_set(MQTT_USER_NAME, MQTT_PASSWORD)
     client.connect('ns01-wss.brainium.com', 443)
 
     client.subscribe(motion_datasource_topic)
