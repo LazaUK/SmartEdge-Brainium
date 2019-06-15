@@ -14,9 +14,9 @@ Provided [Python script](brainium_mqtt_git.py) above allows the use MQTT protoco
 
 You should have Azure IoT Hub installed in your Azure subscription to retrieve its connection details. In the similar way, you need to check your profile settings in the Brainium portal to get API connection secrets. All these details are required to set the values for the following variables in Python file:
 - CONNECTION_STRING
-- mqtt_password
-- user_id
-- device_id
+- MQTT_PASSWORD
+- USER_ID
+- DEVICE_ID
 
 > Don't forget to download [SSL certificate](https://brainium.blob.core.windows.net/public/docs/cacert.crt) as advised in Brainium API documentation and save it to the same directory where you would keep provided Python file.
 
