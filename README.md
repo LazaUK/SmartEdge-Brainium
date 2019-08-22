@@ -8,7 +8,7 @@ This is high-level architecture with all the main blocks of the target solution.
 ![ha-architecture](Brainium_Schematics.png)
 Training motion recognition and sync into Brainium portal is one of the pre-requisites. To learn more about that process, please refer to the Brainium [documentation](https://www.brainium.com/gesture-control)
 
-Partes below will describe how to enable MQTT client to retrieve data, upload it into Azure IoT Hub and the use scripting within Azure Stream Analytics to detect anomalies.
+Parts below will describe how to enable MQTT client to retrieve data, upload it into Azure IoT Hub and the use scripting within Azure Stream Analytics to detect anomalies.
 ## MQTT Client
 Provided [Python script](brainium_mqtt_git.py) above allows the use MQTT protocol for the interaction with both Brainium API (to subscribe to the motion events) and also to upload then some of the details into Azure IoT Hub's endpoint for the further processing.
 
